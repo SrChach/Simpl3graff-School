@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<body>
+
+	<form id="frm1">
+		Grafica1: <input type="text" name="fname" ><br/>
+	</form> 
+
+	<button onclick="myFunction()">Try it</button>
+
+	<p id="demo"></p>
+
+	<script>
+		function myFunction() {
+			var x = document.getElementById("frm1");
+			var text = "";
+			var i;
+			for (i = 0; i < x.length ;i++) {
+				text += x.elements[i].value;
+			}
+			document.getElementById("demo").innerHTML = text;
+		}
+	</script>
+
+	</body>
+</html>

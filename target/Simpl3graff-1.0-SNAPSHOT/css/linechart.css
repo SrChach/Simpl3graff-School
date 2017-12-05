@@ -1,0 +1,21 @@
+text {
+	font-family: sans-serif;
+	font-size: 12px;
+}
+
+svg {
+	display: block;
+}
+
+html, body, #chart1, svg {
+	margin: 0px;
+	padding: 0px;
+	height: 100%;
+	width: 100%;
+}
+
+#chartZoom {
+	position: absolute;
+	top: 0;
+	left: 0;
+}

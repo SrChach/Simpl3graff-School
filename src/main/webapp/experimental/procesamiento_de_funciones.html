@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	</head>
+	<body>
+
+	<form id="frm1">
+		Grafica1: <input type="text" name="fname" ><br/>
+	</form> 
+
+	<button onclick="myFunction()">Try it</button>
+
+	<p id="demo"></p>
+
+	<script>
+		function myFunction() {
+			var x = document.getElementById("frm1");
+			var text = "";
+			var output = "";
+			var i;
+			for (i = 0; i < x.length ;i++) {
+				text += x.elements[i].value;
+			}
+
+			with (Math) f=eval("(function(x) {return "+text+";})");
+			
+		/*
+
+			output += "función evaluada en 0: " + f(0) + "<br/>";
+			output += "función evaluada en 1: " + f(1) + "<br/>";
+			output += "función evaluada en 2: " + f(2) + "<br/>";
+			output += "función evaluada en 3: " + f(3) + "<br/>";
+
+		*/
+
+			for(i = 0; i< 11; i++){
+				output += "función evaluada en "+ i +": " + f(i) + "<br/>";
+			}
+
+			document.getElementById("demo").innerHTML = output;	
+		}
+	</script>
+
+	</body>
+</html>

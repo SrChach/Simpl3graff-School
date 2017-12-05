@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<body>
+
+	<button onclick="myFunction()">Try it</button>
+
+	<script>
+		function myFunction() {
+			
+			
+			var fstring = "x*cos(x)*sin(x)+1";
+			with (Math) f=eval("(function(x) {return "+fstring+";})");
+			alert(f(0));
+			alert(f(1));
+			alert(f(2));
+
+
+		}
+
+	</script>
+
+	</body>
+</html>

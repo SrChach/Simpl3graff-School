@@ -1,0 +1,77 @@
+
+body {
+	color: #333538;
+	font-family: 'Advent Pro', sans-serif;
+}
+
+h1 {
+	font-family: 'Courgette', cursive;
+	color: #FF6384;
+}
+
+.main-container {
+	margin: 0px auto;
+	padding-top: 30px;
+}
+
+.main-container {
+	background-image: url('../public/background.jpg');
+	background-size: cover;
+}
+
+.graph {
+	max-width: 130%;
+}
+
+.signup-box {
+	background-color: white;
+	border: 1px solid black;
+	padding: 10px 0;
+	text-align: center;
+}
+
+.signup-form {
+	width: 75%;
+	margin: 0 auto;
+}
+
+.github {
+	width: 100%;
+	margin: 10px auto;
+        letter-spacing: 0;
+        background-color: #333538;
+	font-size: .9em;
+}
+
+.signup-form h2 {
+	color: #a5a7aa;
+	font-size: 1.2em;
+}
+
+.boton-type1, .boton-type1:hover {
+	background-color: #36A2EB;
+	font-size: .9em;
+}
+
+.main-footer {
+	background: #FF6384;
+	padding-top: 20px;
+	padding-bottom: 15px;
+}
+
+.abajo {
+	margin-bottom: 0;
+}
+
+.btn-flat {
+	background: #FFCE56;
+}
+
+.btn-flat:hover {
+	background: #EBBE50;
+	color: white;
+}
+
+.hide {
+	display: none;
+}
